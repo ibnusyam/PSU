@@ -1,0 +1,240 @@
+<!doctype html>
+<html class="light" lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>PSU - Portofolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#137fec",
+              "primary-dark": "#0e5fb0",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              display: ["Manrope", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-50 overflow-x-hidden"
+  >
+    <header
+      class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-3">
+          <div class="w-full max-w-[1200px] flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div
+                class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary"
+              >
+                <span class="material-symbols-outlined text-[28px]"
+                  >local_parking</span
+                >
+              </div>
+              <h2
+                class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white"
+              >
+                PSU
+              </h2>
+            </div>
+            <div class="hidden md:flex flex-1 items-center justify-end gap-8">
+              <nav class="flex items-center gap-8">
+                <a
+                  class="text-sm font-medium hover:text-primary transition-colors text-slate-700 dark:text-slate-300"
+                  href="index.html"
+                  >Home</a
+                >
+                <a
+                  class="text-sm font-medium hover:text-primary transition-colors text-slate-700 dark:text-slate-300"
+                  href="about.html"
+                  >Tentang Kami</a
+                >
+                <a
+                  class="text-sm font-medium hover:text-primary transition-colors text-slate-700 dark:text-slate-300"
+                  href="services.html"
+                  >Layanan</a
+                >
+                <a
+                  class="text-sm font-bold text-primary transition-colors"
+                  href="portfolio.html"
+                  >Portofolio</a
+                >
+              </nav>
+              <button
+                class="flex cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary hover:bg-primary-dark transition-colors text-white text-sm font-bold shadow-sm shadow-blue-500/20"
+              >
+                <a
+                  href="https://wa.me/6289604700013"
+                  target="_blank"
+                  class="flex cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary hover:bg-primary-dark transition-colors text-white text-sm font-bold shadow-sm shadow-blue-500/20"
+                >
+                  <span class="truncate">Hubungi Kami</span>
+                </a>
+              </button>
+            </div>
+            <button class="md:hidden p-2 text-slate-700 dark:text-white">
+              <span class="material-symbols-outlined">menu</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="relative">
+      <div
+        class="flex min-h-[320px] flex-col gap-6 bg-cover bg-center bg-no-repeat items-center justify-center p-8"
+        style="
+          background-image:
+            linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.7) 100%),
+            url(&quot;https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2669&auto=format&fit=crop&quot;);
+        "
+      >
+        <div class="flex flex-col gap-3 text-center max-w-[800px]">
+          <h1
+            class="text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em]"
+          >
+            Galeri & Legalitas
+          </h1>
+          <p
+            class="text-gray-200 text-base md:text-lg font-normal leading-relaxed"
+          >
+            Bukti nyata kinerja PT. Parkindo Sanju Utama dan kepatuhan legalitas
+            usaha.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="layout-container flex h-full grow flex-col px-4 md:px-10 lg:px-40 pb-20 mt-16 max-w-[1200px] mx-auto w-full"
+    >
+      <section class="mb-20">
+        <h2
+          class="text-[#0d141b] dark:text-white text-3xl font-bold mb-8 border-b pb-4"
+        >
+          Galeri Kegiatan
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            class="group relative overflow-hidden rounded-xl aspect-[4/3] shadow-md bg-slate-200"
+          >
+            <img
+              class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+              src="https://images.unsplash.com/photo-1542259682-9f373d57f185?q=80&w=2670&auto=format&fit=crop"
+              alt="Project 1"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-6 flex items-end"
+            >
+              <h3 class="text-white font-bold text-lg">
+                Manajemen Parkir Mall
+              </h3>
+            </div>
+          </div>
+          <div
+            class="group relative overflow-hidden rounded-xl aspect-[4/3] shadow-md bg-slate-200"
+          >
+            <img
+              class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+              src="https://images.unsplash.com/photo-1596443686812-2f45229eebc3?q=80&w=2671&auto=format&fit=crop"
+              alt="Project 2"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-6 flex items-end"
+            >
+              <h3 class="text-white font-bold text-lg">
+                Instalasi Gate System
+              </h3>
+            </div>
+          </div>
+          <div
+            class="group relative overflow-hidden rounded-xl aspect-[4/3] shadow-md bg-slate-200"
+          >
+            <img
+              class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+              src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=2669&auto=format&fit=crop"
+              alt="Project 3"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-6 flex items-end"
+            >
+              <h3 class="text-white font-bold text-lg">Pelayanan Petugas</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2
+          class="text-[#0d141b] dark:text-white text-3xl font-bold mb-8 border-b pb-4"
+        >
+          Legalitas Usaha
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            class="p-6 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"
+          >
+            <div class="flex items-center gap-3 mb-4">
+              <span class="material-symbols-outlined text-4xl text-primary"
+                >verified</span
+              >
+              <div>
+                <h3 class="text-lg font-bold text-[#0d141b] dark:text-white">
+                  NIB Berbasis Risiko
+                </h3>
+                <p class="text-xs text-slate-500">Nomor: 0703220059196</p>
+              </div>
+            </div>
+            <p class="text-sm text-slate-500">
+              Diterbitkan oleh Menteri Investasi/BKPM.
+            </p>
+          </div>
+          <div
+            class="p-6 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"
+          >
+            <div class="flex items-center gap-3 mb-4">
+              <span class="material-symbols-outlined text-4xl text-primary"
+                >gavel</span
+              >
+              <div>
+                <h3 class="text-lg font-bold text-[#0d141b] dark:text-white">
+                  NPWP Perusahaan
+                </h3>
+                <p class="text-xs text-slate-500">0635.8764.3642.000</p>
+              </div>
+            </div>
+            <p class="text-sm text-slate-500">
+              Terdaftar resmi sebagai wajib pajak badan.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="bg-slate-900 text-slate-400 border-t border-slate-800">
+      <div class="px-4 md:px-10 lg:px-40 py-12 flex justify-center">
+        <div class="w-full max-w-[1200px] text-center md:text-left">
+          <p>© 2024 PT Parkindo Sanju Utama. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

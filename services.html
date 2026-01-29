@@ -90,13 +90,57 @@
                 </a>
               </button>
             </div>
-            <button class="md:hidden p-2 text-slate-700 dark:text-white">
+            <button
+              id="mobile-menu-button"
+              class="md:hidden p-2 text-slate-700 dark:text-white"
+            >
               <span class="material-symbols-outlined">menu</span>
             </button>
           </div>
         </div>
       </div>
     </header>
+    <div id="mobile-menu" class="fixed inset-0 z-[60] hidden md:hidden">
+      <div
+        id="overlay"
+        class="absolute inset-0 bg-slate-900/50 backdrop-blur-sm"
+      ></div>
+
+      <nav
+        class="absolute right-0 top-0 h-full w-64 bg-white dark:bg-background-dark p-6 shadow-xl"
+      >
+        <div class="flex justify-end mb-8">
+          <button id="close-menu" class="text-slate-700 dark:text-white">
+            <span class="material-symbols-outlined">close</span>
+          </button>
+        </div>
+        <div class="flex flex-col gap-6">
+          <a class="text-lg font-bold text-primary" href="index.html">Home</a>
+          <a
+            class="text-lg font-medium text-slate-700 dark:text-slate-300"
+            href="about.html"
+            >Tentang Kami</a
+          >
+          <a
+            class="text-lg font-medium text-slate-700 dark:text-slate-300"
+            href="services.html"
+            >Layanan</a
+          >
+          <a
+            class="text-lg font-medium text-slate-700 dark:text-slate-300"
+            href="portfolio.html"
+            >Portofolio</a
+          >
+          <hr class="border-slate-200 dark:border-slate-800" />
+          <a
+            href="https://wa.me/6289604700013"
+            class="flex h-12 items-center justify-center rounded-lg bg-primary text-white font-bold"
+          >
+            Hubungi Kami
+          </a>
+        </div>
+      </nav>
+    </div>
 
     <div class="@container">
       <div
@@ -290,5 +334,22 @@
         </div>
       </div>
     </footer>
+    <script>
+      const btn = document.getElementById("mobile-menu-button");
+      const menu = document.getElementById("mobile-menu");
+      const closeBtn = document.getElementById("close-menu");
+      const overlay = document.getElementById("overlay");
+
+      // Fungsi Toggle Menu
+      function toggleMenu() {
+        menu.classList.toggle("hidden");
+        // Mencegah scroll pada body saat menu terbuka
+        document.body.classList.toggle("overflow-hidden");
+      }
+
+      btn.addEventListener("click", toggleMenu);
+      closeBtn.addEventListener("click", toggleMenu);
+      overlay.addEventListener("click", toggleMenu); // Klik di luar menu untuk menutup
+    </script>
   </body>
 </html>
